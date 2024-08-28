@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css'
-import logo from '../assets/logo9.png';
+import logo from '../assets/logo15.png';
 import { NavLink } from 'react-router-dom';
 import { IoMdSearch } from "react-icons/io";
 
