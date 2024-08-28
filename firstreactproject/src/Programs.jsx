@@ -15,7 +15,7 @@ const Programs = () => {
           Sıcak bir atmosferde, denizin ferahlatıcı havasını ve eşsiz tatlarını yaşamanız için özenle tasarlanmış restoranımız,
            gurme deneyimler arayanların adresi.</p>
     
-    <p>YEMEKLER</p>
+  
     
             </div>
         </div>
