@@ -3,32 +3,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+   background: #f0f0f0;
+
+
     padding: 16px 7%;
 }
 
-.logo9 {
+.logo15{
     width: 200px;
     cursor: pointer;
-
-}
-
-ul{
-    flex: 1;
     list-style: none;
     text-align: center;
 }
+
 ul li{
     display: inline-block;
     margin: 10px 20px;
-    font-size: 18px ;
+    font-size: 15px ;
     cursor: pointer;
 }
 .search-box{
-    display: flex;
-    align-items: center;
-    background: #e5e6d7;
-    padding: 12px 20px;
-    border-radius: 50px;
+
+    background:#89aebb;
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    border:0;
+    outline: 0;
+
     
+}
+.text{
+    color:#89aebb
 }
