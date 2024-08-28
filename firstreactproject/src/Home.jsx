@@ -1,7 +1,20 @@
 import React from 'react'
+import homePhoto from '../../assets/balık4.png'
+import './Home.css'
 
-export const Home = () => {
+ const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <div className ='homePhoto'>
+
+      
+</div>
+
+      <img src={homePhoto} alt="Home" style={{ width: '100%', height: 'auto' }} />
+    </div>
+
+    
   )
 }
+
+ export default Home 
