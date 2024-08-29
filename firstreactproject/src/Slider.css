@@ -1,0 +1,75 @@
+.slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 110%;
+    gap: 110px;
+    
+  }
+  
+  .slide {
+    min-width: 25%; /* 4 görsel yan yana */
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 0;
+    
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+
+.program{
+
+     /* Görselin ekranın tamamını kaplamasını sağlar */
+    top: 0; /* Üstten sıfır konum */
+    left: 0; /* Soldan sıfır konum */
+    width: 100vw; /* Görselin genişliğini ekran genişliğine ayarlar */
+    height: 100vh; /* Görselin yüksekliğini ekran yüksekliğine ayarlar */
+    object-fit: cover; /* Görselin kapsayıcıyı tam olarak kaplamasını sağlar */
+    margin: 0; /* Kenar boşluklarını kaldırır */
+    padding: 0; /* İç boşlukları kaldırır */
+    z-index: -1; /* Görseli diğer içeriklerin arkasına alır (gerekirse) */
+
+
+
+}
