@@ -19,7 +19,7 @@
   }
   
   .slide {
-    min-width: 25%; /* 4 görsel yan yana */
+    min-width: 25%; 
     box-sizing: border-box;
   }
   
@@ -60,15 +60,15 @@
 
 .program{
 
-     /* Görselin ekranın tamamını kaplamasını sağlar */
-    top: 0; /* Üstten sıfır konum */
-    left: 0; /* Soldan sıfır konum */
-    width: 100vw; /* Görselin genişliğini ekran genişliğine ayarlar */
-    height: 100vh; /* Görselin yüksekliğini ekran yüksekliğine ayarlar */
-    object-fit: cover; /* Görselin kapsayıcıyı tam olarak kaplamasını sağlar */
-    margin: 0; /* Kenar boşluklarını kaldırır */
-    padding: 0; /* İç boşlukları kaldırır */
-    z-index: -1; /* Görseli diğer içeriklerin arkasına alır (gerekirse) */
+   
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover; 
+    margin: 0;
+    padding: 0;
+    z-index: -1;
 
 
 
