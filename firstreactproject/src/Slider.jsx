@@ -21,8 +21,8 @@ const Slider = () => {
     const images = [
       program_1, program_2, program_3, program_4, program_5, program_6, program_7, program_8, program_9, program_10, program_11,program_12
     ];
-  
-    // Her kaydırmada 4 görsel göstereceğiz
+
+    
     const itemsPerPage = 4;
     const numSlides = Math.ceil(images.length / itemsPerPage);
   
