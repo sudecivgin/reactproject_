@@ -1,51 +1,44 @@
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
 import logo from '../assets/logo15.png';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { IoMdSearch } from "react-icons/io";
 
-
-
-
-const Navbar =()=> {
-  const [click,setClick]=useState(false)
-  
+const Navbar = () => {
   return (
     <div className='Navbar'>
-        <img src ={logo} alt=''className='logo9' />
+      <img src={logo} alt='Logo' className='logo9' />
 
-      <ul className ='nav-menu'>          
+      <ul className='nav-menu'>
         <li>
-                  <NavLink className ="nav-link" to="/Ana Sayfa">Ana Sayfa</NavLink>
+          <Link to='home' smooth={true} offset={-70} duration={500}>
+            Ana Sayfa
+          </Link>
+        </li>
+        <li>
+          <Link to='hakkımızda' smooth={true} offset={-70} duration={500}>
+            Hakkımızda
+          </Link>
+        </li>
+        <li>
+          <Link to='menu' smooth={true} offset={-70} duration={500}>
+            Menü
+          </Link>
+        </li>
+        <li>
+          <Link to='iletişim' smooth={true} offset={-70} duration={500}>
+            İletişim
+          </Link>
+        </li>
+      </ul>
 
-</li>
-<li>
-<NavLink className ="nav-link" to="/Hakkımızda">Hakkımızda</NavLink>
- 
-</li>
-<li>
-<NavLink className ="nav-link" to="/Menü">Menü</NavLink>
- 
-</li>
-<li>
-
-<NavLink className ="nav-link" to="/İletişim">İletişim</NavLink>
-</li>
-
-        </ul>
-        <div className='search-box'>
-            <input type='text' placeholder='Search'/>
-            <IoMdSearch />
-
-            
-        </div>
-        
-
-        </div>
-  )
+      <div className='search-box'>
+        <input type='text' placeholder='Ara' />
+        <IoMdSearch />
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
-      
-      
+export default Navbar;
         
