@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
+   
   }
   
   .slider {
@@ -19,7 +20,7 @@
   }
   
   .slide {
-    min-width: 25%; 
+    min-width: 25%;
     box-sizing: border-box;
   }
   
@@ -29,6 +30,8 @@
     border-radius: 8px;
     object-fit: cover;
     margin-top: 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);   
+    
     
   }
   
@@ -60,16 +63,27 @@
 
 .program{
 
-   
+    
     top: 0; 
     left: 0; 
     width: 100vw; 
-    height: 100vh;
+    height: 100vh; 
     object-fit: cover; 
-    margin: 0;
-    padding: 0;
-    z-index: -1;
+    margin: 0; 
+    padding: 0; 
+    z-index: -1; 
 
 
+}
 
+.slider-footer {
+
+  font-family: serif;
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+  color: #1f0505;
+  margin-top: 70px;
+  margin-bottom: 5px;
+ 
 }
