@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Menü.css';
 
-// Görselleri buraya ekleyin
+
 import ahtapotIzgaraImg from '../../assets/ahtapot2.png';
 import ızgaraBalıkImg from '../../assets/ızgara balık2.png';
 import somonTavaImg from '../../assets/somon tava2.png';
