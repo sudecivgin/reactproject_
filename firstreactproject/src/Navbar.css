@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+
+
 .Navbar {
   display: flex;
   align-items: center;
@@ -5,45 +13,48 @@
   padding: 10px 20px;
   background-color: #f0f0f0; 
   color: #000000; 
-  margin-bottom: 100px;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 0; 
 }
+
 
 .logo9 {
   height: 90px; 
 }
+
 
 .nav-menu {  
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-  font-family:serif; 
   font-weight: bold; 
   font-size: 20px;
-
 }
 
 .nav-menu li {
   margin: 0 15px;
-}
 
+}
 
 .nav-menu a {
   text-decoration: none; 
   border-bottom: 2px solid #000; 
   color: #000; 
-  font-family: serif; 
-  font-weight: bold; 
   padding: 5px; 
   transition: color 0.3s, border-bottom 0.3s; 
-}
+  font-family: serif;
 
+}
 
 .nav-menu a:hover {
   color: #89aebb; 
   border-bottom: 2px solid #89aebb; 
 }
-
 
 
 .search-box {
@@ -60,9 +71,10 @@
   border-radius: 5px;
   background-color: #70909b; 
   color: #fff; 
-  font-family: serif; 
   font-size: 1em; 
   font-weight: bold;
+  font-family: serif;
+
 }
 
 .search-box input::placeholder {
@@ -73,3 +85,9 @@
   color: #fff; 
   margin-left: 8px;
 }
+
+
+body {
+  padding-top: 110px; 
+}
+
