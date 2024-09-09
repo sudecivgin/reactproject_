@@ -1,0 +1,190 @@
+.menu {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column; /* Başlıkları dikey olarak hizalar */
+  align-items: center; /* İçerikleri ortalar */
+  margin-bottom: 30px; /* Başlık ile içerikler arasına boşluk */
+
+  
+  text-align: center;
+}
+
+.menu-text h1 {
+
+  font-family: serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #000000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
+               -2px -2px 5px rgba(255, 255, 255, 0.3);
+  margin-top: 200px; /* Başlık için üst boşluğu sıfırlar */
+  margin-bottom: 110px; /* Başlık ile altındaki içerik arasına boşluk */
+  text-align: center;
+
+
+
+}
+
+
+
+.menu-headers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.menu-sections-container {
+  display: flex;
+  justify-content: space-between; /* İçerikleri yatayda eşit aralıklarla hizalar */
+  gap: 20px; /* Bölümler arasındaki boşluk */
+}
+
+.menu-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.menu-text .subtitle {
+  font-weight: bold; /* Metni kalın yapar */
+  font-size: 24px; /* İsteğe bağlı: Başlık boyutunu ayarlayın */
+  margin-bottom: 10px; /* Başlık ile altındaki öğe arasındaki boşluğu ayarlar */
+  border-bottom: 2px solid #000; /* Başlığın altına çizgi ekler */
+  padding-bottom: 5px; /* Çizgi ile metin arasına boşluk ekler */
+
+  font-family: serif;
+}
+
+.text {
+  position: relative;
+  text-align: left; /* Yazının sol hizalanmasını sağlar */
+  margin-left: 20px; /* Sayfanın sol kenarına biraz boşluk bırakır */
+}
+
+.text-1 {
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  font-size: 24px; 
+  margin-bottom: 10px;
+  margin-top: 375px;
+  font-family: serif;
+}
+
+.arasicak-buttons,
+.menu-items,
+.beverages-buttons {
+  list-style-type: disc; /* Madde işaretlerini gösterir */
+  padding-left: 20px; /* Madde işaretleri için sol boşluk ekler */
+  margin: 0; /* Varsayılan margin'ı sıfırlar */
+}
+
+.arasicak-buttons li,
+.menu-items li,
+.beverages-buttons li {
+  cursor: pointer;
+  padding: 10px 20px; /* Butonların iç boşluklarını ayarlar */
+  margin-bottom: 10px; /* Butonlar arasındaki boşluk */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #4f6e85; /* Buton arka plan rengi */
+  transition: background-color 0.3s, transform 0.2s; /* Arka plan ve büyütme animasyonu */
+  display: block; /* Butonları alt alta hizalar */
+  text-align: center; /* Buton metnini ortalar */
+  width: max-content; /* İçeriğe göre genişlik */
+  font-family: serif;
+}
+
+.arasicak-buttons li:hover,
+.menu-items li:hover,
+.beverages-buttons li:hover {
+  background-color: #f0f0f0; /* Buton hover efekti */
+  transform: scale(1.02); /* Hover efektiyle biraz büyüme */
+}
+
+.image-overlay {
+  position: fixed; /* Görseli sayfanın üstünde sabitler */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Yarı saydam koyu arka plan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Diğer içeriklerin üzerinde olması için yüksek z-index */
+  cursor: pointer; /* Tıklanabilir alan olduğunu gösterir */
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 8px;
+}
+
+.image-container img {
+  max-width: 90%;
+  max-height: 90vh;
+  height: auto;
+  border-radius: 8px;
+}
+
+.beverages-title {
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+  font-size: 24px; 
+  margin-bottom: 10px;
+  margin-top: 380px;
+font-family: serif;
+  
+}
+
+.beverages-buttons {
+  list-style-type: disc; /* Liste işaretlerini kaldırır */
+  padding-left: 20px; /* İç boşlukları kaldırır */
+  margin: 0; /* Margin ayarlarını sıfırlar */
+  margin-top: 10px;
+
+  
+}
+
+.beverages-buttons li {
+  cursor: pointer;
+  margin-bottom: 10px; /* Her bir madde arasına boşluk ekler */
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #ddd; /* Buton kenarlarına sınır ekler */
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+  padding: 10px 20px; /* İç boşlukları ayarlar */
+  background-color: #4f6e85; /* Arka plan rengi */
+  display: block; /* Butonları alt alta hizalar */
+  text-align: center; /* Metni ortalar */
+  transition: background-color 0.3s, transform 0.2s; /* Hover efekti */
+  width: fit-content; /* İçerik genişliğine göre buton genişliğini ayarlar */
+  margin-left: auto; /* Butonu ortalamak için otomatik sol margin */
+  margin-right: auto; /* Butonu ortalamak için otomatik sağ margin */
+  font-family: serif;
+  color: #000000;
+
+  
+}
+
+.beverages-buttons li:hover {
+  background-color: #e0e0e0; /* Hover efekti */
+  transform: scale(1.02); /* Hover efektiyle biraz büyüme */
+  
+}
