@@ -1,41 +1,81 @@
-.menu {
-  padding: 20px;
-  text-align: center;
+.menu-list li {
   display: flex;
-  flex-direction: column
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: left;
+  color: #000000;
+  font-family: serif;
+  position: relative; 
+  margin-right: 65px ;
+  text-align: left; 
+  margin-left: 0px; 
+
+  z-index: 1; 
+  font-weight: bold;
+
 }
+
+
+.menu-list li::before {
+  content: "↬";
+  font-size: 24px; 
+  color: #000000; 
+  margin-right: 10px; 
+  display: inline-block; 
+  
+}
+
+
+
+.menu-item-img {
+  width: 50px; 
+  height: 40px;
+  border-radius: 5px; 
+  margin-right: 10px; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+}
+
+
+.menu-item-img:hover {
+  transform: scale(10); 
+  z-index: 9999;
+}
+
 
 .menu-text {
   display: flex;
   flex-direction: column; 
   align-items: center; 
   margin-bottom: 30px; 
-  
+  margin-top: 1px;
   text-align: center;
+  font-weight: bold;
+  z-index: 1; 
 }
 
 .menu-text h1 {
-
   font-family: serif;
   font-size: 60px;
   font-weight: 600;
   color: #000000;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
                -2px -2px 5px rgba(255, 255, 255, 0.3);
-  margin-top: 200px; 
-  margin-bottom: 110px;
+  margin-top: 150px; 
+  margin-bottom: 50px;
   text-align: center;
-
-
+  z-index: 1;
 
 }
-
-
 
 .menu-headers {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -54,133 +94,178 @@
   font-weight: bold; 
   font-size: 24px; 
   margin-bottom: 10px; 
-  border-bottom: 2px solid #000; 
+  border-bottom: 3px solid #000; 
   padding-bottom: 5px;
-
   font-family: serif;
+  transition: color 0.3s ease;
+  z-index: 1;
+
+  margin-left: 0px;
+
+}
+
+.menu-text .subtitle:hover {
+  color: #5c3332;
+
 }
 
 .text {
   position: relative;
   text-align: left; 
   margin-left: 20px; 
+  padding-bottom: 5px;
+
+  font-weight: bold;
+
 }
+
 
 .text-1 {
   margin: 0;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
-  cursor: pointer;
   font-size: 24px; 
   margin-bottom: 10px;
-  margin-top: 375px;
+  margin-top: 350px;
   font-family: serif;
+  transition: color 0.3s ease;
+
+  margin-left: 20px;
+
 }
 
-.arasicak-buttons,
-.menu-items,
-.beverages-buttons {
-  list-style-type: disc;
-  padding-left: 20px; 
-  margin: 0; 
+.text-1:hover {
+  color: #5c3332;
 }
 
-.arasicak-buttons li,
-.menu-items li,
-.beverages-buttons li {
-  cursor: pointer;
-  padding: 10px 20px; 
-  margin-bottom: 10px; 
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #4f6e85; 
-  transition: background-color 0.3s, transform 0.2s; 
-  display: block; 
-  text-align: center; 
-  width: max-content;
-  font-family: serif;
-}
-
-.arasicak-buttons li:hover,
-.menu-items li:hover,
-.beverages-buttons li:hover {
-  background-color: #f0f0f0; 
-  transform: scale(1.02); 
-}
-
-.image-overlay {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6); 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000; 
-  cursor: pointer; 
-}
-
-.image-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border-radius: 8px;
-}
-
-.image-container img {
-  max-width: 90%;
-  max-height: 90vh;
-  height: auto;
-  border-radius: 8px;
-}
 
 .beverages-title {
   margin: 0;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
-  cursor: pointer;
   font-size: 24px; 
   margin-bottom: 10px;
-  margin-top: 380px;
-font-family: serif;
-  
-}
-
-.beverages-buttons {
-  list-style-type: disc;
-  padding-left: 20px; 
-  margin: 0; 
-  margin-top: 10px;
-
-  
-}
-
-.beverages-buttons li {
-  cursor: pointer;
-  margin-bottom: 10px; 
-  font-size: 18px;
-  color: #333;
-  border: 1px solid #ddd; 
-  border-radius: 5px; 
-  padding: 10px 20px; 
-  background-color: #4f6e85; 
-  display: block; 
-  text-align: center; 
-  transition: background-color 0.3s, transform 0.2s; 
-  width: fit-content; 
-  margin-left: auto;
-  margin-right: auto; 
+  margin-top: 620px;
   font-family: serif;
-  color: #000000;
+  transition: color 0.3s ease;
+  margin-right:30px ;
+  text-align: left; 
+  margin-left: 20px; 
 
+}
+
+
+
+.beverages-title:hover {
+  color: #5c3332;
+}
+
+
+
+.imagess {
+  display: block; 
+  width: 300px; 
+  height: auto; 
+  margin: 0 auto; 
+  margin-left: 50px; 
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+  cursor: pointer; 
+  display: none;
+  z-index: 10000; 
+
+
+}
+
+
+.image-overlay img {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px; 
+  margin-top: 200px;
   
 }
+
+
+
+.show {
+  display: flex; 
+}
+
+
+
+.parent {
+  position: relative;
+
+  z-index: 500; 
+
+}
+
+
+.ara-sicak-list .ara-sicak-item {
+  margin-left: 70px; 
+}
+
+
+
+.ara-sicak-list .menu-item-img:hover {
+  transform: scale(10) translateX(50%); 
+  z-index: 9999;
+}
+
+.beverages-list .menu-item-img:hover {
+  transform: scale(10) translateX(-50%); 
+  z-index: 9999; 
+}
+
+
+.footer-image {
+  display: flex; 
+  justify-content: flex-start; 
+  margin-top: 50px; 
+}
+
+
+
+.footer-img {
+  max-width: 100%; 
+  border-radius: 10px;
+  margin-top: 70px;
+  margin-left: 220px; 
+  margin-top: 80px;
+
+}
+
+
+.footer-container {
+  position: relative; 
+  margin-top: 50px;
+}
+
+.parent {
+  overflow: visible; 
+  z-index: 500; 
+}
+
+
+
 
 .beverages-buttons li:hover {
   background-color: #e0e0e0; 
