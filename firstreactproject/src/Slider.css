@@ -1,3 +1,4 @@
+
 .slider-container {
     position: relative;
     width: 80%;
@@ -78,12 +79,20 @@
 
 .slider-footer {
 
-  font-family: serif;
   text-align: center;
   font-size: 30px;
   padding: 5px;
-  color: #1f0505;
+  color: #1b1a1a;
   margin-top: 70px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-family: serif;
  
+}
+
+
+.slider-footer p{
+  font-family: serif;
+  font-weight: bold;
+
+  
 }
