@@ -53,7 +53,7 @@ const Slider = () => {
 
 
       <div className='slider-footer'>
-                <p>"Denizin Sunduğu Lezzetlerle Dolu Bir Deneyim"</p>
+                <p>★ "Denizin Sunduğu Lezzetlerle Dolu Bir Deneyim" ★   </p>
             </div>
 
 
