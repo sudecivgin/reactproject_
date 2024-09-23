@@ -6,6 +6,13 @@ import Slider from './components/Programs/Slider';
 import Menü from './components/Programs/Menü';
 import İletişim from './components/Programs/İletişim';
 import { Element } from 'react-scroll';
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 import './App.css'; 
 
 const App = () => {
@@ -40,3 +47,4 @@ const App = () => {
 }
 
 export default App;
+
