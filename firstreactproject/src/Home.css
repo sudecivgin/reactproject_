@@ -1,5 +1,6 @@
 .Home{
 
+
 width: 100%;
 min-height: 100vh;
 background: linear-gradient(rgba(8,0,58,0.7)rgba(8,0,58,0.7)),url('../../assets/balık3.webp');
@@ -9,14 +10,12 @@ color: #fff;
 display: flex;
 align-items: center;
 justify-content: center;
-    margin-bottom: 100px;
-
-
+margin-bottom: 100px;
 
 }
 
 .background-container {
-    
+        
         position: relative;
         width: 100%;
         height: auto;
@@ -26,10 +25,17 @@ justify-content: center;
       .transparent-image {
         width: 100%;
         height: auto;
-        opacity: 0.5;
+        opacity: 0.5; 
       }
-
-.homePhoto{
-  margin-top: 80px;
-}
       
+.homePhoto{
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .homePhoto img {
+    width: 200%; 
+    height: auto; 
+    position: relative; 
+  }
+}
