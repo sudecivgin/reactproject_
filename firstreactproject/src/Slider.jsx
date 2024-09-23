@@ -15,7 +15,6 @@ import program_12 from '../../assets/kalkan.jpg';
 
 
 
-
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
@@ -51,15 +50,20 @@ const Slider = () => {
         <button className='next' onClick={nextSlide}>&#10095;</button>
       </div>
 
-
       <div className='slider-footer'>
-                <p>★ "Denizin Sunduğu Lezzetlerle Dolu Bir Deneyim" ★   </p>
-            </div>
+    <p>
+    ★<br/>
+         Her anı farklı bir deneyimle,<br />
+        Her manzarada bir heyecanla,<br />
+        Taze tatların eşliğinde,<br />
+        Yeni bir serüvene merhaba diyelim! <br/>
 
+        ★
+    </p>
+</div>
 
 
 </div>
-
 
 
     );
