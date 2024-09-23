@@ -1,81 +1,84 @@
 .contact {
-    padding: 20px;
-    font-family: serif;
-    background-color: #415a6d; 
-    margin-top: 140px;
-    font-family: serif;
-  }
-  
-  .contact-col {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: serif;
-  }
-  
-  .contact h1 {
-    font-size: 2.4em;
-    margin-bottom: 20px;
-    color: #000000; 
-    margin-top: 10px;
-    font-family: serif;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 
-    -2px -2px 5px rgba(255, 255, 255, 0.3); 
-  }
-  
+  padding: 20px;
+  font-family: serif;
+  background-color: #a8b4bc; 
+  margin: 140px 0 0 0; 
+  width: 100vw; 
+  position: absolute; 
+  left: 0; 
+}
 
-  
-  .contact ul {
-    list-style-type: none;
-    padding: 0;
-    font-family: serif;
+.contact-col {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #000000; 
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 
+              -2px -2px 5px rgba(255, 255, 255, 0.3); 
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact ul li {
+  font-size: 1.2em;
+  margin-bottom: 15px; 
+  padding: 15px;
+  border: 1px solid #7a9aa7; 
+  border-radius: 10px; 
+  background-color: #f0f0f0af; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s, transform 0.3s; 
+  width: auto; 
+  text-align: center; 
+  display: inline-block;
+}
+
+.contact ul li:hover {
+  background-color: #7a9aa7; 
+  transform: scale(1.02); 
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #333; 
+  text-decoration: none; 
+}
+
+.social-icon {
+  font-size: 2em; 
+  transition: color 0.3s ease; 
+}
+
+.social-icon:hover {
+  color: #86b5e8; 
+}
+
+@media (max-width: 768px) {
+  .contact h1 {
+      font-size: 2em;
   }
 
   .contact ul li {
-    font-size: 1.2em;
-    margin-bottom: 15px; 
-    padding: 15px;
-    border: 1px solid #7a9aa7; 
-    border-radius: 10px; 
-    background-color: #f0f0f0af; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s, transform 0.3s; 
-    font-family: serif; 
-    max-width: 100%;
-    width: auto; 
-    text-align: center; 
-    display: inline-block;
-    
+      font-size: 1em;
   }
-  
-  
-  .contact ul li:hover {
-    background-color: #7a9aa7; 
-    transform: scale(1.02); 
-    
-  }
-  
-  
 
-  social-media {
-    
-    margin-top: 20px;
-  }
-  
-  .social-media a {
-    margin: 0 10px;
-    color: #333; 
-    text-decoration: none; 
-  }
-  
   .social-icon {
-    margin-top: 50px;
-    font-size: 2em; 
-    transition: color 0.3s ease; 
+      font-size: 1.5em; 
   }
-  
-  .social-icon:hover {
-    color: #86b5e8; 
-  }
+}
+
 
